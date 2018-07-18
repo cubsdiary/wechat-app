@@ -1,0 +1,31 @@
+<view class="map">
+  <map id="myMap" scale="{{scale}}" longitude="{{lng}}" latitude="{{lat}}" markers="{{markers}}" bindregionchange="regionchange" bindcallouttap="callouttap" bindtap="updateMap" show-location>
+    <cover-view class="map-btn">
+      <cover-view class="map-location" bindtap="getLocation">
+        <cover-image class="loc-img" src="https://cdn.cubsdiary.com/images/wechat/location.png" />
+      </cover-view>
+      <cover-view class="bor"></cover-view>
+      <cover-view class="map-kf" bindtap="getAllCall">
+        <cover-image class="kf-img" src="https://cdn.cubsdiary.com/images/wechat/kf_bg.png" />
+      </cover-view>
+    </cover-view>
+    <cover-view class="store-info" wx:if="{{showInfo}}">
+      <cover-view class="con">
+        <cover-view class="left" bindtap="getTypeCall">
+          <cover-image class=".leftimg" src="https://cdn.cubsdiary.com/images/wechat/phone.png" />
+        </cover-view>
+        <cover-view class="right">
+          <cover-view class="center">
+            <cover-view class="h2">{{nowStore.name}}</cover-view>
+            <cover-view class="p">{{nowStore.address}}</cover-view>
+          </cover-view>
+          <cover-view class="bor"></cover-view>
+          <cover-view class="way" bindtap="openLocation">
+            <cover-image class="wayimg" src="https://cdn.cubsdiary.com/images/wechat/local.png" />
+             <cover-view class="p">{{nowStore.distance}}</cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+  </map>
+</view>

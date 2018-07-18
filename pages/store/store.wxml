@@ -1,0 +1,36 @@
+<view class="store-container">
+  <view class="city-sele">
+    <view class="txt">选择城市</view>
+    <view class="city">常州</view>
+  </view>
+  <view class="section">
+    <scroll-view scroll-y class="scroll">
+      <view class="{{item.id === checkIndex ? 'store-list check': 'store-list'}}" wx:for="{{stores}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="checkStore"  data-item="{{item}}">
+        <view class="top">
+          <view class="store-img">
+            <image src="{{'https://www.gt1.shop/api/common/download?id=' + item.img}}"
+            lazy-load="true" mode="aspectFill"></image>
+          </view>
+          <view class="store-info">
+            <view class="info-top">
+              <view class="info-name"><text class="font">{{item.name}}</text></view>
+              <text class="info-far">{{item.distance}}</text>
+            </view>
+            <view class="info-bottom">
+              <text class="info-address">{{item.address}}</text>
+              <!-- <view class="info-sele">
+                <text class="btn-1" wx:if="{{idx !== 0}}" bindtap="seleStore(item)"></text>
+                <text class="btn-2" wx:else></text>
+              </view> -->
+            </view>
+          </view>
+        </view>
+        <view class="bottom">
+          <view class="go-map"  catchtap="goMap" data-item="{{item}}">查看定位</view>
+          <view class="call-dz" catchtap="callDz" data-item="{{item}}">联系店长</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="sele-btn" bindtap="seleStore"></view>
+</view>

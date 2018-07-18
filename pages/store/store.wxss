@@ -1,0 +1,161 @@
+.store-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.city-sele{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f2f2f2;
+  padding: 0px 30rpx;
+}
+.city-sele .txt{
+  font-size: 28rpx;
+  color: #4a4a4a;
+  line-height: 100rpx;
+}
+.city-sele .city{
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #fd9068;
+  line-height: 100rpx;
+  text-align: right;
+  padding-right: 26rpx;
+  background-image: url('https://www.gt1.shop/images/city-bg@2x.png');
+  background-repeat: no-repeat;
+  background-size: 6rpx 12rpx;
+  background-position: right center;
+}
+.section{
+  flex: 1;
+  display: flex;
+}
+.section .scroll{
+  flex: 1;
+  overflow: hidden;
+}
+.store-list{
+  height: 218rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 6rpx;
+  border-top: 2rpx solid #fff;
+  border-bottom: 2rpx solid #fff;
+}
+.store-list.check{
+  border-top: 2rpx solid #ff914d;
+  border-bottom: 2rpx solid #ff914d;
+}
+
+.store-list .top{
+  padding: 13rpx 0rpx;
+  height: 128rpx;
+  display: flex;
+  border-bottom:  1rpx solid #f2f2f2;
+}
+.store-list .top .store-img{
+  width: 145rpx;
+  margin-right: 20rpx;
+}
+.store-list .top .store-img image{
+  width: 145rpx;
+  height: 100%;
+}
+.store-list .top .store-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.store-list .top .info-top{
+  height: 56rpx;
+  display: flex;
+  line-height: 56rpx;
+}
+.store-list .top .info-name{
+  flex: 1;
+}
+.store-list .top .info-name .font{
+  font-size: 26rpx;
+  color: #5b5b5b;
+  padding-right: 57rpx;
+}
+.store-list .top .info-far{
+  width: 90rpx;
+  text-align: right;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  color: #b0b0b0;
+}
+.store-list .top .info-bottom{
+  flex: 1;
+  display: flex;
+  line-height: 30rpx;
+}
+.store-list .top .info-address{
+  width: 400rpx;
+  font-size: 24rpx;
+  color: #ababab;
+}
+.store-list .top .info-sele{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.store-list .top .info-sele .btn-1{
+  width: 108rpx;
+  height: 45rpx;
+  background-image: url('https://www.gt1.shop/images/sele-store@2x.png');
+  background-repeat: no-repeat;
+  background-size: 108rpx 45rpx;
+  background-position: center center; 
+}
+.store-list .top .info-sele .btn-2{
+  width: 135rpx;
+  height: 45rpx;
+  background-image: url('https://www.gt1.shop/images/now-store@2x.png');
+  background-repeat: no-repeat;
+  background-size: 135rpx 45rpx;
+  background-position: center center; 
+}
+.store-list .bottom{
+  flex: 1;
+  display: flex;
+}
+.store-list .bottom .go-map{
+  margin-left: 165rpx;
+  width: 180rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 32rpx;
+  background-image: url('https://www.gt1.shop/images/address@2x.png');
+  background-repeat: no-repeat;
+  background-size: 18rpx 24rpx;
+  background-position: left center;
+  font-size: 24rpx;
+  color: #ff914d;
+}
+.store-list .bottom .call-dz{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 56rpx;
+  background-image: url('https://www.gt1.shop/images/call@2x.png');
+  background-repeat: no-repeat;
+  background-size: 29rpx 28rpx;
+  background-position: right center;
+  font-size: 24rpx;
+  color: #ababab;
+}
+.sele-btn{
+  height: 100rpx;
+  background-image: url('https://www.gt1.shop/images/sele-btn@2x.png');
+  background-repeat: no-repeat;
+  background-size: 750rpx 100rpx;
+  background-position: right center;
+}

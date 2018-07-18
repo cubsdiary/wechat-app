@@ -1,0 +1,318 @@
+/**index.wxss**/
+.container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.container>.title {
+  height: 100rpx;
+  display: flex;
+  background-color: #fff;
+  padding: 0rpx 30rpx;
+  margin-bottom: 1rpx;
+}
+.title .address{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title .title-info{
+  width: 78rpx;
+  font-size: 26rpx;
+  color: #6a6a6a;
+  line-height: 100rpx;
+  margin-right: 7rpx;
+}
+.title .now-time{
+  width: 150rpx;
+  font-size: 26rpx;
+  color: #4a4a4a;
+  line-height: 100rpx;
+}
+.title .next-time{
+  width: 168rpx;
+  font-size: 26rpx;
+  color: #4a4a4a;
+  text-align: right;
+  line-height: 100rpx;
+}
+.title .address-sele{
+  display: inline-block;
+  padding: 18rpx 27rpx 22rpx 27rpx;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #fff;
+  background-image: url('https://www.gt1.shop/images/btn@2x.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.title .address-sele .text{
+  padding-right: 30rpx;
+  background-image: url('https://www.gt1.shop/images/triangle@2x.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 16rpx 9rpx;
+}
+.shop-time{
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.shop-time .shop-time-txt{
+  font-size: 26rpx;
+  color: #a5a5a5;
+  line-height: 50rpx;
+  margin-right: 24rpx;
+  padding-left: 30rpx;
+}
+.shop-time .time{
+  flex: 1;
+  height: 50rpx;
+  display: flex;
+}
+.shop-time .time .time-txt{
+  width: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  background-color: #555555;
+
+}
+.shop-time .time .time-space{
+  width: 24rpx;
+  background-image: url('https://www.gt1.shop/images/pointer@2x.png');
+  background-size: 4rpx 13rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.shop-time .share{
+  width: 100rpx;
+  height: 80rpx;
+  background: none;
+  background-image: url('https://www.gt1.shop/images/share@2x.png');
+  background-size: 31rpx 31rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-left: 1rpx solid #f2f2f2;
+  overflow: hidden;
+}
+.shop-time .share::after{
+  border: none;
+}
+.container .shopping {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 30rpx 25rpx 30rpx;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+}
+.shopping .good-img{
+  height: 270rpx;
+  margin-bottom: 27rpx;
+}
+.shopping .good-title{
+  font-size: 26rpx;
+  font-weight: bolder;
+  line-height: 36rpx;
+  color: #555555;
+}
+.shopping .over-txt{
+  height: 35rpx;
+  display: flex;
+}
+.shopping .over-txt .left{
+  flex: 1;
+  text-align: left;
+  font-size: 24rpx;
+  color: #ff6b64;
+  line-height: 35rpx;
+}
+.shopping .over-txt .right{
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #ff6b64;
+  line-height: 35rpx;
+}
+.scroll{
+  flex: 1;
+  overflow: hidden;
+}
+.scroll .info-time{
+  height: 90rpx;
+  display: flex;
+  background-color: #fff;
+  padding: 0 30rpx;
+  line-height: 90rpx;
+}
+.scroll .info-time .title{
+  width: 130rpx;
+  font-size: 26rpx;
+  color: #b4b4b4;
+  text-align: left;
+}
+.scroll .info-time .time{
+  font-size: 26rpx;
+  color: #555555;
+}
+.scroll .info-txt{
+  display: flex;
+  background-color: #fff;
+  padding: 0 30rpx;
+  line-height: 36rpx;
+  padding-bottom: 20rpx;
+}
+.scroll .info-txt .title{
+  width: 130rpx;
+  height: 36rpx;
+  font-size: 26rpx;
+  color: #b4b4b4;
+  text-align: left;
+}
+.scroll .info-txt .txt{
+  flex: 1;
+  line-height: 36rpx;
+  font-size: 26rpx;
+  color: #555555;
+}
+.get-btn{
+  height: 98rpx;
+  background-image: url('https://www.gt1.shop/images/success@2x.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 20rpx;
+}
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .container .title .address-sele{
+    background-image: url('https://www.gt1.shop/images/btn@3x.png');
+  }
+  .container .title .address-sele .text{
+    background-image: url('https://www.gt1.shop/images/triangle@3x.png');
+  }
+   .container .shop-time .time .time-space{
+    background-image: url('https://www.gt1.shop/images/pointer@3x.png');
+  }
+} 
+.success-mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.6);
+  background-image: url('https://www.gt1.shop/images/success-bg@2x.png');
+  background-size: 750rpx 753rpx;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+.success-info{
+  margin: 0 auto;
+  width: 530rpx;
+  margin-top: 388rpx;
+  margin-bottom: 140rpx;
+  padding-top: 130rpx;
+}
+.success-info .h2{
+  display: block;
+  height: 34rpx;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #6d6d6d;
+  text-align: center;
+  line-height: 34rpx;
+}
+.success-info .h3{
+  display: block;
+  height: 92rpx;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #a0a0a0;
+  text-align: center;
+  line-height: 92rpx;
+}
+.success-mask .close-mask{
+  width: 353rpx;
+  height: 80rpx;
+  background-image: url('https://www.gt1.shop/images/know-btn@2x.png');
+  background-size: 353rpx 80rpx;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #fff;
+  margin: 0 auto;
+}
+.success-mask .h4{
+  height: 200rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 200rpx;
+}
+.error-mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.6);
+  background-image: url('https://www.gt1.shop/images/error-bg@2x.png');
+  background-size: 750rpx 810rpx;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  transform: all 2s;
+}
+.error-info{
+  margin: 0 auto;
+  width: 530rpx;
+  margin-top: 448rpx;
+  margin-bottom: 140rpx;
+  padding-top: 130rpx;
+}
+.error-info .h2{
+  display: block;
+  height: 34rpx;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #6d6d6d;
+  text-align: center;
+  line-height: 34rpx;
+}
+.error-info .h3{
+  display: block;
+  height: 92rpx;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #a0a0a0;
+  text-align: center;
+  line-height: 92rpx;
+}
+.error-mask .close-mask{
+  width: 353rpx;
+  height: 80rpx;
+  background-image: url('https://www.gt1.shop/images/know-err@2x.png');
+  background-size: 353rpx 80rpx;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  font-weight: bolder;
+  color: #fff;
+  margin: 0 auto;
+}

@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">
+    <text class='title-info'>门店：</text>
+    <view class='address'>
+      <view class="address-sele" bindtap="goMap">
+        <text class="text">{{storeName}}</text>
+      </view>
+    </view>
+    <text class="now-time">{{'10:00'}}进行中</text>
+    <text class="next-time">下一场{{'12:00'}}</text>
+  </view>
+  <view class="shop-time">
+    <view class="time">
+      <text class="shop-time-txt">距离结束还有</text>
+      <text class="time-txt">{{'01'}}</text>
+      <text class="time-space"></text>
+      <text class="time-txt">{{'22'}}</text>
+      <text class="time-space"></text>
+      <text class="time-txt">{{'34'}}</text>
+    </view>
+    <button open-type="share" class="share"></button>
+  </view>
+  <scroll-view scroll-y class="scroll">
+    <view class="shopping">
+      <view class="good-img">
+        <image style="width: 100%; height: 100%; background-color: #eeeeee;-webkit-filter:grayscale(1);" src="https://www.gt1.shop/images/success@2x.png"></image>
+      </view>
+      <view class="good-title">9.9元洗车券 每天每家门店发放4张 请选择好门店进行抢券afdasfasfdsdafasfdasf</view>
+      <view class="over-txt" >
+        <text class="left">每人限抢一张</text>
+        <text class="right">剩余: 4/4</text>     
+      </view>
+    </view>
+    <view class="info-time">
+      <text class="title">活动时间：</text>
+      <text class="time">2018.3.28-2018.6.30</text>
+    </view>
+    <view class="info-txt">
+      <text class="title">活动规则：</text>
+      <text class="txt">撒打算大所大所是的地方水电费水电费水电订单地方地方是否水电费水电费水电费水电地方水电费水电费水电费是是是是搜索是否对付对付地方dafdasfds</text>
+    </view>
+  </scroll-view>
+  <view class="get-btn" bindtap="getVoucher"></view>
+  <view wx:if="{{closeSuccess}}" class="success-mask">
+    <view class="success-info">
+      <text class="h2">成功抢到"{{'9.9元洗车券'}}"</text>
+      <text class="h3">请前往"{{'丽华店'}}"使用</text>
+    </view>
+    <view class="close-mask" catchtap="closeSuccessMask">知道了</view>
+    <view class="h4">请前往“公众号-GT1养车-我的-优惠券”中查看</view>
+  </view>
+  <view wx:if="{{closeError}}" class="error-mask">
+    <view class="error-info">
+      <text class="h2">手慢了 全都被抢光了</text>
+      <text class="h3">别灰心 下一场{{'10:00'}}开枪</text>
+    </view>
+    <view class="close-mask" catchtap="closeErrorMask">知道了</view>
+  </view>
+</view>
+

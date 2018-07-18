@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/map/map",
+    "pages/jackpot/jackpot",
+    "pages/setcode/setcode",
+    "pages/login/login",
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "GT1活动中心",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#62382b",
+    "selectedColor": "#62382b",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/un-active.png",
+        "selectedIconPath": "image/on-active.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "image/un-map.png",
+        "selectedIconPath": "image/on-map.png",
+        "text": "门店"
+      },
+      {
+        "pagePath": "pages/jackpot/jackpot",
+        "iconPath": "image/un-voucher.png",
+        "selectedIconPath": "image/on-voucher.png",
+        "text": "奖库"
+      }
+    ]
+  }
+}
