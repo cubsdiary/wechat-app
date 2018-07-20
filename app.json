@@ -5,7 +5,8 @@
     "pages/jackpot/jackpot",
     "pages/setcode/setcode",
     "pages/login/login",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/luckman/index/index"
   ],
   "window":{
     "navigationBarBackgroundColor": "#ffffff",

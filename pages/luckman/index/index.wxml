@@ -1,0 +1,57 @@
+<view class="jackpot-container">
+  <scroll-view class="scroll-view-y" scroll-y>
+    <view class="time-nav">
+      <view class="time-title">
+        <view class="rule" bindtap="showRule" data-show-type="rule">活动规则</view>
+      </view>
+    </view>
+    <view class="jacktop-list">
+      <scroll-view class="scroll-view-x" scroll-x>
+        <view wx:for="{{jackpot}}" 
+              wx:key="index" 
+              class="item-view {{index === 0 ? 'bor-left' : index === jackpot.length - 1 ? 'bor-right': ''}}"
+        > 
+          <view class="item-view-con">
+            <view class="view-state {{item.state === 0 ? 'color' : ''}}" data-state="{{item.state}}">{{item.state < 0 ? '连续签到' + item.day + '天领取(' + item.now + '/' + item.day + ')' : item.state > 0 ? '已领取' : '可领取'}}</view>
+            <view class="view-info">
+              <image class="img" src="{{item.img}}"></image>
+              <view class="bg">
+                <view class="bg-1 bg-c"></view>
+                <view class="bg-2 bg-c"></view>
+                <view class="bg-3 bg-c"></view>
+              </view>
+            </view>
+            <text class="view-title">{{item.title}}</text>
+            <view class="view-box"></view>
+            <view class="view-btn">
+              <view class="btn {{item.state < 0 ? 'bg-3' : item.state > 0 ? 'bg-1' : 'bg-2'}}" data-item="{{item}}" bindtap="jacktopBtn">{{item.state < 1 ? '领取' : '查看'}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="bottom-nav">
+      <view class="nav-con">
+        <view class="nav-head"></view>
+        <view class="jacktop-view">
+          <view class="jacktop">
+            <view class="jack-con-bg" bindtap="goJacktop">
+              <view class="tips"></view>
+              <text class="text">查看奖池</text>
+            </view>
+          </view>
+          <view class="gift {{signIn ? 'gift-open':'gift-close'}}" bindtap="goSignIn">
+            <text class="text">{{signIn ? '今日已签到':'签到抽奖'}}</text>
+          </view>
+          <view class="trophy">
+            <view class="trophy-con-bg"  bindtap="goTrophy">
+              <text class="text">获奖记录</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  
+  <mask-template animation="{{animationData}}" wx:if="{{showMask}}" mask-data="{{'我就是RULE'}}" bind:myevent="closeMask" class="mask-template"></mask-template>
+</view>

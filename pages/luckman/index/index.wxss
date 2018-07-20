@@ -1,0 +1,272 @@
+.jackpot-container{
+  flex: 1; 
+  display: flex;
+  background: #fff;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/active1.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.scroll-view-y{
+  flex: 1;
+  /* background-color: red; */
+}
+.mask-template{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.time-nav{
+  position: relative;
+  width: 100%;
+  height: 284rpx;
+  background-color: #fff;
+}
+.time-nav .time-title {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 110rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.time-nav .time-title .rule{
+  box-sizing: border-box;
+  width: 186rpx;
+  height: 78rpx;
+  padding-left: 24rpx;
+  line-height: 78rpx;
+  font-size: 30rpx;
+  color: #4a4a4a;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/more-black.png');
+  background-size: 18rpx 16rpx;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.time-nav:after{
+  content: '';
+  position: absolute;
+  bottom: -18rpx;
+  left: 50%;
+  width:0;
+  height:0;
+  border-width: 10rpx 10rpx 10rpx 10rpx;
+  border-style:solid;
+  border-color:#fff transparent transparent transparent;
+  transform: translateX(-50%)
+}
+.jacktop-list{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  margin-top: 20rpx;
+}
+.scroll-view-x{
+  width: 100%;
+  height: 400rpx;
+  white-space: nowrap;
+}
+.scroll-view-x .item-view{
+  box-sizing: border-box;
+  width: 275rpx;
+  height: 400rpx;
+  flex-direction: column;
+  margin-right: 10rpx; 
+  background-color: #fff;
+  border-radius: 8rpx;
+  display: inline-block;
+  padding: 0rpx 15rpx 15rpx 10rpx;
+  overflow: hidden;
+}
+.scroll-view-x .item-view.bor-left{
+  margin-left: 30rpx;
+}
+.scroll-view-x .item-view.bor-right{
+  margin-right: 30rpx;
+}
+.scroll-view-x .item-view-con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.scroll-view-x .view-state{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 22rpx;
+  color: #909090;
+}
+.scroll-view-x .view-state.color{
+  color: #ffc66c;
+}
+.scroll-view-x .view-info{
+  height: 165rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.scroll-view-x .view-info .img{
+  width: 205rpx;
+  height: 165rpx;
+}
+.scroll-view-x .view-info .bg{
+  box-sizing: border-box;
+  flex: 1;
+  padding-top: 35rpx;
+  margin-left: 8rpx;
+}
+.scroll-view-x .view-info .bg-c{
+  width: 100%;
+  height: 10rpx;
+  background-color: #eaeaea;
+}
+.scroll-view-x .view-info .bg-1{
+  margin-bottom: 10rpx;
+}
+.scroll-view-x .view-info .bg-2{
+  margin-bottom: 75rpx;
+} 
+.scroll-view-x .view-box{
+  flex: 1;
+}
+.scroll-view-x .view-title{
+  display: block;
+  height: 72rpx;
+  display: -webkit-box;
+  font-size: 28rpx;
+  line-height: 36rpx;
+  white-space:pre-line;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scroll-view-x .view-btn{
+  box-sizing: border-box;
+  height: 51rpx;
+  display: flex;
+  padding-right: 5rpx;
+  justify-content: flex-end;
+}
+.scroll-view-x .view-btn .btn{
+  width: 116rpx;
+  height: 51rpx;
+  line-height: 51rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  border-radius: 51rpx;
+}
+.scroll-view-x .view-btn .btn.bg-1{
+  background-color: #624646;
+}
+.scroll-view-x .view-btn .btn.bg-2{
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/jacktop-btn.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 116rpx 51rpx;
+}
+.scroll-view-x .view-btn .btn.bg-3{
+  background-color: #979797;
+}
+.bottom-nav{
+  box-sizing: border-box;
+  width: 100%;
+  height: 470rpx;
+  margin-top: 16rpx;
+  padding: 0 30rpx;
+  margin-bottom: 15rpx;
+}
+.bottom-nav .nav-con{
+  width: 100%;
+  height: 470rpx;
+  background-color: #fff;
+}
+.bottom-nav .nav-head {
+  width: 100%;
+  height: 77rpx;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/linear.png');
+  background-size: 690rpx 2rpx;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 50rpx;
+}
+.bottom-nav .jacktop-view{
+  display: flex;
+  box-sizing: border-box;
+  padding: 0rpx 35rpx 0rpx 35rpx;
+  width: 100%;
+  height: 320rpx;
+}
+.bottom-nav .jacktop {
+  margin-left: 15rpx;
+  width: 118rpx;
+  display: flex;
+}
+.bottom-nav .jacktop .jack-con-bg {
+  margin-top: 150rpx;
+  flex: 1;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/jacktop-bg.png');
+  background-size: 108rpx 91rpx;
+  background-repeat: no-repeat;
+  background-position: left 42rpx;
+}
+.bottom-nav .jacktop .tips{ 
+  width: 100%;
+  height: 42rpx;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/jacktop-tips.png');
+  background-size: 34rpx 42rpx;
+   background-repeat: no-repeat; 
+  background-position: center center;
+  margin-bottom: 80rpx;
+}
+.bottom-nav .jacktop .text{
+  display: block;
+  text-align: center;
+  font-size: 24rpx;
+  color: #848484;
+}
+.bottom-nav .gift {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 226rpx;
+  text-align: center;
+}
+.bottom-nav .gift .text{
+  line-height: 48rpx;
+  color: #564c4c;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.bottom-nav .gift.gift-open{
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/gift-open.png');
+  background-size: 312rpx 320rpx;
+}
+.bottom-nav .gift.gift-close{
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/gift-close.png');
+  background-size: 312rpx 278rpx;
+}
+.bottom-nav .trophy {
+  width: 151rpx;
+}
+.bottom-nav .trophy .trophy-con-bg{
+  margin-top: 150rpx;
+  flex: 1;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/trophy.png');
+  background-size: 61rpx 77rpx;
+  background-repeat: no-repeat;
+  background-position: center 48rpx;
+}
+.bottom-nav .trophy .text{
+  padding-top: 125rpx;
+  display: block;
+  text-align: center;
+  font-size: 24rpx;
+  color: #848484;
+}

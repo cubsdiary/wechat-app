@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "rule-mask": "/components/rule/rule"
+  },
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "幸运车主"
+}
