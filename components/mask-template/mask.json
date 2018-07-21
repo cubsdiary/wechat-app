@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rule-mask": "/components/rule/rule"
+  }
+}

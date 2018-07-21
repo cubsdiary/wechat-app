@@ -52,7 +52,7 @@ Page({
           id: index,
           latitude: item.lat, 
           longitude: item.lng,
-          alpha: 0.3,
+          alpha: 1,
           iconPath: '/image/marker.png',
           anchor: {
             x: .5,
@@ -61,7 +61,7 @@ Page({
           callout: {
             content: item.name,
             bgColor: '#616161',
-            color: '#fff',
+            color: '#ffffff',
             fontSize: 12,
             padding: 10,
             display: 'ALWAYS',

@@ -1,0 +1,3 @@
+<view class="mask-template" animation="{{animationData}}">
+  <rule-mask></rule-mask>
+</view>

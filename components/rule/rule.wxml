@@ -1,4 +1,3 @@
 <view class="rule-mask">
-  Im rule-mask{{maskData}}
-  <button bindtap="closeMask">关闭</button>
+  Im rule-mask
 </view>

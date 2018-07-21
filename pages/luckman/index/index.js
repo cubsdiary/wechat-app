@@ -5,7 +5,6 @@ Page({
    */
   data: {
     showMask: false,
-    animationData: {},
     signIn: false,
     jackpot: [{
       id: 0,
@@ -44,34 +43,15 @@ Page({
       state: -1
     }]
   },
-  showMask: function () {
+  _closeMask: function (res) {
+    this.setData({
+      showMask: false
+    })
+  },
+  _showMask: function (res) {
     this.setData({
       showMask: true
     })
-    let animation = wx.createAnimation({
-      duration: 100,
-      timingFunction: 'ease-in',
-      delay: 0
-    })
-    this.animation = animation
-    animation.opacity(1).step()
-    setTimeout(function () {
-      this.setData({
-        animationData: animation.export()
-      })
-    }.bind(this), 100)
-  },
-  closeMask: function (res) {
-    
-    this.animation.opacity(0).step()
-    this.setData({
-      animationData: this.animation.export()
-    })
-    setTimeout(function () {
-      this.setData({
-        showMask: false
-      })
-    }.bind(this), 100)
   },
   jacktopBtn: function (e) {
     let state = e.target.dataset.item.state
@@ -81,21 +61,30 @@ Page({
       // 领取券操作
     } else if (state > 0) {
       // 显示券详情操作
-      this.showMask()
+      this._showMask()
     }
   },
   showRule: function (e) {
-    console.log(e)
+    this._showMask()
   },
   goJacktop: function () {
     // 跳到奖池页面
+    wx.navigateTo({
+      url: '../jackpot/jackpot'
+    })
   },
   goSignIn: function () {
     // 点击签到
+    this.setData({
+      signIn: true
+    })
   },
   
   goTrophy: function () {
     // 跳到获奖记录
+    wx.navigateTo({
+      url: '../../history/history?method=luckman'
+    })
   },
   /**
    * 生命周期函数--监听页面加载

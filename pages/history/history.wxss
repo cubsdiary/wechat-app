@@ -1,3 +1,72 @@
 .history{
-  color: red;
+  flex: 1;
+  display: flex;
+  background-color: #f2f2f2;
+}
+.scroll-view{
+  flex: 1;
+}
+.view-list{
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  padding: 0 30rpx;
+}
+.view-list .day-class{
+  box-sizing: border-box;
+  height: 54rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  padding-top: 24rpx;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.view-list .jackpot-list{
+  overflow: hidden;
+}
+.view-list .jackpot-info{
+  box-sizing: border-box;
+  display: flex;
+  height: 140rpx;
+  width: 100%;
+  padding-top: 22rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.view-list .info{
+  position: relative;
+  width: 430rpx;
+  font-size: 26rpx;
+  color: #4a4a4a;
+  line-height: 45rpx;
+}
+.view-list .info .state{
+  display: block;
+  position: absolute;
+  right: 0rpx;
+  top: 52rpx;
+  width: 108rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 30rpx;
+  text-align: center;
+}
+.view-list .state.bg1{
+  background-color: #ff7d7d;
+}
+.view-list .state.bg0{
+  background-color: #9c94ff;
+}
+.view-list .get-info{
+  flex: 1;
+  padding-right: 40rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/more-red.png');
+  background-position: right center;
+  background-size: 20rpx 18rpx;
+  background-repeat: no-repeat;
+  font-size: 26rpx;
+  color: #ff744f;
 }

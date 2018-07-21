@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "rule-mask": "/components/rule/rule"
+    "mask-template": "/components/mask-template/mask"
   },
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "幸运车主"

@@ -53,5 +53,5 @@
     </view>
   </scroll-view>
   
-  <mask-template animation="{{animationData}}" wx:if="{{showMask}}" mask-data="{{'我就是RULE'}}" bind:myevent="closeMask" class="mask-template"></mask-template>
+  <mask-template wx:if="{{showMask}}" data-item-mask="{{'我就是RULE'}}" bind:myevent="_closeMask"></mask-template>
 </view>
