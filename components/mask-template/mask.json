@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
+    "share-mask": "/components/share/share",
     "rule-mask": "/components/rule/rule"
   }
 }

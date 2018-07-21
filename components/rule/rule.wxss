@@ -1,0 +1,12 @@
+.rule-mask{
+  position: absolute;
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  bottom: 0rpx;
+  margin: auto;
+  width: 630rpx;
+  height: 480rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}

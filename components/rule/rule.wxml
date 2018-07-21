@@ -1,3 +1,3 @@
 <view class="rule-mask">
-  Im rule-mask
+  <view class="rule-icon"></view>
 </view>

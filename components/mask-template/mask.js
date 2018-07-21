@@ -3,7 +3,10 @@ Component({
     itemMask: String
   },
   data: {
-    animationData: {}
+    animationData: {},
+    showRule: false,
+    showShare: true,
+    showUse: false
   },
   created: function () {
     this.showMask()
