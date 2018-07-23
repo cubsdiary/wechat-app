@@ -1,3 +1,31 @@
-<view class="rule-mask">
-  <view class="rule-icon"></view>
+
+<view class="rule-head-1">活动规则</view>
+<view class="rule-info rule">
+  <view class="rule-nav">1.</view>
+  <text class="text">注册为GT1用户，才可参加本活动，用户每日签到并同时抽奖一次。（具体奖品参照“奖池”内容）</text> 
+</view>
+<view class="rule-info rule">
+  <view class="rule-nav">2.</view>
+  <text class="text">每位用户每月有5次补签机会，每次只需转发本活动至微信好友或微信群即可成功补签。</text> 
+</view>
+<view class="rule-info">
+  <view class="rule-nav">3.</view>
+  <text class="text">连续签到奖励在每月月末最后一天更新，请及时领取连续签到奖励。</text> 
+</view>
+<view class="rule-head-2">
+  <view class="bg-1"></view>
+  奖品使用规则
+  <view class="bg-2"></view>
+</view>
+<view class="rule-info rule">
+  <view class="rule-nav">1.</view>
+  <text class="text">所有兑换资格都需要用户至相应门店进行奖品兑换。</text> 
+</view>
+<view class="rule-info rule red">
+  <view class="rule-nav">2.</view>
+  <text class="text">所有奖品请勿自己使用，请在门店接受服务前在门店员工的监督下使用。</text> 
+</view>
+<view class="rule-info">
+  <view class="rule-nav">3.</view>
+  <text class="text">活动即奖品最终解释权归江苏奇特异车业科技股份有限公司所有。</text> 
 </view>

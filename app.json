@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/map/map",
     "pages/jackpot/jackpot",
@@ -8,9 +8,11 @@
     "pages/index/index",
     "pages/luckman/index/index",
     "pages/history/history",
-    "pages/luckman/jackpot/jackpot"
+    "pages/luckman/jackpot/jackpot",
+    "pages/shopowner/shopowner",
+    "pages/shopowner/write-off"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "GT1活动中心",
     "navigationBarTextStyle": "black",

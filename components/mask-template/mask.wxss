@@ -1,9 +1,55 @@
-.mask-template{
-  position: absolute;
+.position-mask{
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  overflow: hidden;
+}
+.mask-template{
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
+}
+.get-jackpot{
+  width: 600rpx;
+  height: 530rpx;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0.5) 100%);
+  border-radius: 14rpx;
+}
+.rule-mask{
+  box-sizing: border-box;
+  width: 630rpx;
+  height: 845rpx;
+  background: #fff;
+  padding: 0 50rpx;
+}
+.share-mask{
+  width: 630rpx;
+  height: 480rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.no-luck-draw{
+  width: 610rpx;
+  height: 615rpx;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/no-luck-draw.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 610rpx 615rpx;
+}
+.position-bg{
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/mask-luck.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 750rpx 1070rpx;
+}
+.luck-draw{
+  width: 610rpx;
+  height: 700rpx;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/luck-draw.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 610rpx 700rpx;
 }

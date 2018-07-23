@@ -47,7 +47,7 @@
   height: 76rpx;
   display: flex;
   margin-top: 1rpx;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .8);
   padding: 0rpx 30rpx;
   border-radius: 10rpx;
 }

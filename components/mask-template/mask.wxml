@@ -1,4 +1,13 @@
-<view class="mask-template" animation="{{animationData}}">
-  <rule-mask wx:if="{{showRule}}"></rule-mask>
-  <share-mask wx:if="{{showShare}}"></share-mask>
+<view class="position-mask mask-template {{showLuckDraw ? 'position-bg' : ''}}" animation="{{animationData}}" bindtap="_closeMask">
+
+  <rule-mask wx:if="{{showRule}}" bind:maskevent="_closeMask"  class="position-mask rule-mask" catchtap="noThing"></rule-mask>
+
+  <share-mask wx:if="{{showShare}}" bind:maskevent="_closeShare" class="position-mask share-mask" catchtap="noThing"></share-mask>
+
+  <get-jackpot wx:if="{{showGetJackpot}}" bind:maskevent="_closeGetJackpot" class="position-mask get-jackpot" catchtap="noThing"></get-jackpot>
+
+  <not-luck-draw wx:if="{{showNoLuckDraw}}" bind:maskevent="_closeGetJackpot" class="position-mask no-luck-draw" catchtap="noThing"></not-luck-draw>
+
+  <luck-draw wx:if="{{showLuckDraw}}" bind:maskevent="_closeGetJackpot" class="position-mask luck-draw" catchtap="noThing"></luck-draw>
+
 </view>

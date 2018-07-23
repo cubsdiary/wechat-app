@@ -1,20 +1,23 @@
 Component({
   properties: {
-    itemMask: String
+    itemMask: Object
   },
   data: {
     animationData: {},
     showRule: false,
-    showShare: true,
-    showUse: false
+    showShare: false,
+    showUse: false,
+    showGetJackpot: false,
+    showNoLuckDraw: false,
+    showLuckDraw: true
   },
   created: function () {
-    this.showMask()
+    this._showMask()
   },
   methods: {
-    showMask: function () {
+    _showMask: function () {
       let animation = wx.createAnimation({
-        duration: 200,
+        duration: 300,
         timingFunction: 'ease-in',
         delay: 0
       })
@@ -24,9 +27,9 @@ Component({
         this.setData({
           animationData: animation.export()
         })
-      }.bind(this), 200)
+      }.bind(this), 300)
     },
-    closeMask: function (res) {
+    _closeMask: function (res) {
 
       this.animation.opacity(0).step()
       this.setData({
@@ -37,7 +40,18 @@ Component({
       }
       setTimeout(function () {
         this.triggerEvent('myevent', myEventDetail)
-      }.bind(this), 200)
+      }.bind(this), 300)
+    },
+    noThing: function () {
+      return
+    },
+    _closeShare: function () {
+      // 分享成功后操作
+      this._closeMask()
+    },
+    _closeGetJackpot: function () {
+      // 领取成功后操作
+      this._closeMask()
     }
   }
 })

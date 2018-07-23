@@ -1,13 +1,10 @@
 Component({
-  properties: {
-    maskData: String
-  },
   methods: {
     closeMask: function () {
-      let myEventDetail = {
+      let ruleDetail = {
         close: false
       }
-      this.triggerEvent('myevent', myEventDetail)
+      this.triggerEvent('maskevent', ruleDetail)
     }
   }
 })

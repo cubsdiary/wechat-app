@@ -1,16 +1,4 @@
-.share-mask{
-  position: absolute;
-  left: 0rpx;
-  right: 0rpx;
-  top: 0rpx;
-  bottom: 0rpx;
-  margin: auto;
-  width: 630rpx;
-  height: 480rpx;
-  background: #fff;
-  border-radius: 10rpx;
-}
-.share-mask .share-icon{
+.share-icon{
   width: 100%;
   height: 200rpx;
   margin-bottom: 20rpx;
@@ -19,7 +7,7 @@
   background-position: center bottom;
   background-size: 144rpx 144rpx;
 }
-.share-mask .text1{
+.text1{
   display: block;
   width: 100%;
   height: 52rpx;
@@ -28,13 +16,13 @@
   line-height: 52rpx;
   text-align: center;
 }
-.share-mask .share-btn{
+.share-btn{
   width: 287rpx;
   height: 56rpx;
   font-size: 30rpx;
   color: #ffffff;
   text-align: center;
-  line-height: 30rpx;
+  line-height: 56rpx;
   margin: 0 auto;
   margin-top: 37rpx;
   background-image: url('https://cdn.cubsdiary.com/images/wechat/jacktop-btn.png');

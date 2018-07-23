@@ -1,0 +1,5 @@
+<view class="no-luck-head">签到成功</view>
+<view class='no-luck-title'>很遗憾没有中奖</view>
+<view class='no-luck-title bor'>不要灰心明天再来试试吧</view>
+<view class='no-luck-tips'>今日水逆 来日再战</view>
+<view class='no-luck-btn' catchtap='_closeMask'>我不服！</view>

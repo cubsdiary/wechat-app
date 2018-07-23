@@ -1,12 +1,59 @@
-.rule-mask{
-  position: absolute;
-  left: 0rpx;
-  right: 0rpx;
-  top: 0rpx;
-  bottom: 0rpx;
-  margin: auto;
-  width: 630rpx;
-  height: 480rpx;
-  background: #fff;
-  border-radius: 10rpx;
+.rule-head-1{
+  width: 100%;
+  height: 102rpx;
+  line-height: 102rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #3b3b3b;
+  font-weight: bolder;
+  margin-bottom: 10rpx;
+}
+.rule-head-2{
+  display: flex;
+  width: 320rpx;
+  height: 102rpx;
+  line-height: 102rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #3b3b3b;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+.rule-head-2 .bg-1{
+  width: 60rpx;
+  /* background-image: url(''); */
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto atuo;
+}
+.rule-head-2 .bg-2{
+  width: 60rpx;
+  /* background-image: url(''); */
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto atuo;
+}
+.rule-info{
+  display: flex;
+  width: 100%;
+  min-height: 36rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #3b3b3b;
+}
+.rule-info.red{
+  color: #ff6363;
+}
+.rule-info.rule{
+   margin-bottom: 20rpx; 
+}
+.rule-info .rule-nav{
+  width: 40rpx;
+  text-align: center;
+  line-height: 36rpx;
+}
+.rule-info .text{
+  flex: 1;
+  width: 480rpx;
+  line-height: 36rpx;
 }
