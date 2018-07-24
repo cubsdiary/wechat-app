@@ -1,2 +1,34 @@
 <!--pages/shopowner/shopowner.wxml-->
-<text>pages/shopowner/shopowner.wxml</text>
+<view class='shopowner-bg'>
+  <view class='shop-accout'>
+    <view class='shop-name'>
+      <text class='txt'>门店：</text>
+      <text class='info'>{{'奇特异快速保养（丽华店）'}}</text>
+    </view>
+    <view class='shop-tell'>
+      <text class='txt'>员工账号：</text>
+      <text class='info'>{{'18772815385'}}</text>
+      <view class='btn' bindtap="toggleLogin">切换账号</view>
+    </view>
+  </view>
+  <view class='shop-info'>
+    <view class='title box'>
+      <text class='txt-1'>本店预约</text>
+      <text class='txt-2'>今日核销</text>
+      <text class='txt-3'>总核销奖品</text>
+    </view>
+    <view class='nums box'>
+      <text class='txt-1'>{{0}}</text>
+      <text class='txt-2'>{{244}}</text>
+      <text class='txt-3'>{{7456}}</text>
+    </view>
+  </view>
+  <view class='shop-btns'>
+    <view class='qr-code btn' bindtap="qrCodeBtn">
+      <text class='txt'>二维码核销</text>
+    </view>
+    <view class='write-off-code btn' bindtap="writeOffCodeBtn">
+      <text class='txt'>兑奖码核销</text>
+    </view>
+  </view>
+</view>

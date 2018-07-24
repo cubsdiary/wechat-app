@@ -4,11 +4,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    shopAuth: true
   },
   goActiveInfo: function () {
     wx.navigateTo({
       url: '../luckman/index/index'
+    })
+  },
+  goShopMenu: function () {
+    wx.navigateTo({
+      url: '../shopowner/shopowner'
     })
   },
   /**

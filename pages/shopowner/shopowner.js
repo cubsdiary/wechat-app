@@ -7,7 +7,15 @@ Page({
   data: {
   
   },
-
+  qrCodeBtn: function () {
+    // 二维码扫描核销
+  },
+  writeOffCodeBtn: function () {
+    // 活动码核销
+  },
+  toggleLogin: function () {
+    // 兑换码核销
+  },
   /**
    * 生命周期函数--监听页面加载
    */

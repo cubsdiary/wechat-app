@@ -14,8 +14,26 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+.shop-btn {
+  box-sizing: border-box;
+  padding-left: 130rpx;
+  width: 300rpx;
+  height: 80rpx;
+  background-color: #fff;
+  line-height: 80rpx;
+  background-image: url('https://cdn.cubsdiary.com/images/wechat/gt1.png');
+  background-position: 40rpx center;
+  background-size: 71rpx 27rpx;
+  background-repeat: no-repeat;
+  font-size: 30rpx;
+  color: #959595;
+  border-radius: 80rpx;
+  margin: 0 auto;
+  margin-bottom: 16rpx;
+}
 .list{
   overflow: hidden;
+  margin-bottom: 25rpx;
 }
 .active{
   box-sizing: border-box;
@@ -25,6 +43,7 @@
   padding: 20rpx 30rpx;
   background: #fff;
   border-radius: 10rpx;
+  margin-bottom: 2rpx;
 }
 .img {
   height: 270rpx;
@@ -46,7 +65,6 @@
 .bar{
   height: 76rpx;
   display: flex;
-  margin-top: 1rpx;
   background-color: rgba(255, 255, 255, .8);
   padding: 0rpx 30rpx;
   border-radius: 10rpx;

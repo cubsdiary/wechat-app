@@ -1,6 +1,7 @@
 <view class="home">
   <scroll-view scroll-y class="active-list">
-    <view class="list">
+    <view class="shop-btn" wx:if="{{shopAuth}}" bindtap="goShopMenu">店长操作</view>
+    <view class="list" wx:for="{{[0, 1, 2, 3]}}" wx:key="{{index}}">
       <view class="active" bindtap="goActiveInfo">
         <view class="img">
           <image style="width: 100%; height: 100%; background-color: #eeeeee;" src="https://www.gt1.shop/images/success@2x.png"></image>
