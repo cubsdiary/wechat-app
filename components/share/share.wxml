@@ -1,5 +1,0 @@
-
-<view class="share-icon"></view>
-<text class="text1">分享此活动至任意微信群</text>
-<text class="text1">或微信好友，即可补签成功</text>
-<view class="share-btn" catchtap="closeShare">分享</view>

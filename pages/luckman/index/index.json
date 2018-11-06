@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "mask-template": "/components/mask-template/mask"
-  },
-  "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "幸运车主"
-}
